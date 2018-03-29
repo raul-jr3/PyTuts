@@ -1,20 +1,22 @@
 
+# a prime number is one which is divisible by itself and one.
+# suppose I have a number 5;
+# 5: divisible only by 1 and 5 itself, so it is a prime number
+# 4: divisible by 1, 4 and 2 also, so it is not a prime number
+
 
 def check_if_prime(number):
+    output = "not a prime number"
     if number == 1:
-        print("1 is not a prime number")
+        print(output)
     for i in range(2, number):
         if number % i == 0:
-            print("{} is not a prime number".format(number))
+            print(output)
             exit()
 
     else:
-        print("{} is a prime number".format(number))
+        output = "is a prime number"
+        print(output)
 
-
-        # else:
-        #     print("{} is a prime number".format(number))
-        #     exit()
 
 check_if_prime(91)
-

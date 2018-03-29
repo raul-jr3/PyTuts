@@ -28,16 +28,8 @@
 #     else:
 #         print("it is not a leap year")
 
-"""
-
-
-
-"""
-
 
 def check_leap_year(year):
-
-
     output = "not a leap year"
     if year % 4 == 0:
         if year % 100 != 0 or year % 400 == 0:
@@ -46,7 +38,3 @@ def check_leap_year(year):
     print(output)
 
 check_leap_year(2016)
-
-
-
-
